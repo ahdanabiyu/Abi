@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Page</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #ff4d4d;
+            transform: scale(1.1);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-item img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-item a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .social-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffe;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ff0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tombol Home -->
+    <button class="home-button" onclick="location.href='index.html'">Home</button>
+
+    <!-- Instagram -->
+    <div class="social-item">
+        <img src="foto ig.png" alt="Instagram Icon">
+        <a href="https://www.instagram.com/ahdnabyu/profilecard/?igsh=MWF4dW5idHZ1eWVlZg==" target="_blank">Instagram</a>
+    </div>
+    <!-- TikTok -->
+    <div class="social-item">
+        <img src="foto tt.webp" alt="TikTok Icon">
+        <a href="https://www.tiktok.com/@biiyyuuukk?_t=8rZxyqD6feK&_r=1" target="_blank">TikTok</a>
+    </div>
+
+    <footer>
+        <p>Powered by <a href="https://yourwebsite.com" target="_blank">Your Website</a></p>
+    </footer>
+</body>
+</html>
